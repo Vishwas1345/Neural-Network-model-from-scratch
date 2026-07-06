@@ -1,0 +1,81 @@
+[
+  {
+    "name": "orig-arch (784-10-10)",
+    "arch": [
+      784,
+      10,
+      10
+    ],
+    "loss": "cross_entropy",
+    "batch_size": null,
+    "lr": 0.1,
+    "epochs": 980,
+    "train_acc": 0.9197833333333333,
+    "test_acc": 0.9208,
+    "seconds": 267.471440076828
+  },
+  {
+    "name": "expanded CE full-batch",
+    "arch": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "loss": "cross_entropy",
+    "batch_size": null,
+    "lr": 0.1,
+    "epochs": 200,
+    "train_acc": 0.9123833333333333,
+    "test_acc": 0.9167,
+    "seconds": 111.15868186950684
+  },
+  {
+    "name": "expanded MSE full-batch",
+    "arch": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "loss": "mse",
+    "batch_size": null,
+    "lr": 0.1,
+    "epochs": 200,
+    "train_acc": 0.885,
+    "test_acc": 0.8921,
+    "seconds": 113.0563268661499
+  },
+  {
+    "name": "expanded CE mini-batch",
+    "arch": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "loss": "cross_entropy",
+    "batch_size": 64,
+    "lr": 0.5,
+    "epochs": 30,
+    "train_acc": 0.9999166666666667,
+    "test_acc": 0.9819,
+    "seconds": 14.02734899520874
+  },
+  {
+    "name": "expanded MSE mini-batch",
+    "arch": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "loss": "mse",
+    "batch_size": 64,
+    "lr": 0.5,
+    "epochs": 30,
+    "train_acc": 0.9975,
+    "test_acc": 0.9818,
+    "seconds": 14.215354919433594
+  }
+]

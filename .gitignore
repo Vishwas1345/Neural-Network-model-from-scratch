@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Raw MNIST data (downloaded on demand by src/data_loader.py)
+data/
+*.idx*-ubyte
+*-ubyte.gz
+
+# Large committed CSV from the original repo (10k test rows, ~17 MB)
+Handwritten digits classification/*.csv
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Keep: models/weights.npz (small, committed on purpose) and results/*.png

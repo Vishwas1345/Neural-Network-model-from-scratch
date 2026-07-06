@@ -1,0 +1,10 @@
+# Core: the from-scratch network + training only need NumPy.
+numpy==2.2.6
+# Data loading convenience (CSV path) and plotting for results/.
+pandas==2.3.3
+matplotlib==3.10.9
+# Demo app + image preprocessing.
+gradio==6.19.0
+pillow==12.3.0
+# Tests.
+pytest==9.1.1
